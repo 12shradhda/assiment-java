@@ -1,0 +1,303 @@
+
+
+1. Code to check voter's eligibility based on age
+
+public class VoterEligibility {
+    public static void main(String[] args) {
+        int age = 22;
+
+        if (age > 18) {
+            System.out.println("Eligible");
+        } else {
+            System.out.println("Not eligible");
+        }
+    }
+}
+```
+
+2. Code to check the length of a string and modify it if necessary:
+
+```java
+public class StringLengthCheck {
+    public static void main(String[] args) {
+        String text = "Hi I’m learning in PEF, I will become a developer";
+
+        if (text.length() > 28) {
+            text = "I will become a developer";
+            System.out.println("Successfully changed.");
+        }
+
+        System.out.println("Modified string: " + text);
+    }
+}
+```
+
+3. Code to change two strings using a third variable
+
+```java
+public class StringSwap {
+    public static void main(String[] args) {
+        String a = "Hello";
+        String b = "World";
+        String temp;
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
+```
+
+4. Code to change two strings without using a third variable
+
+```java
+public class StringSwapWithoutTemp {
+    public static void main(String[] args) {
+        String a = "Hello";
+        String b = "World";
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        a = a + b;
+        b = a.substring(0, a.length() - b.length());
+        a = a.substring(b.length());
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
+```
+
+5. Code to print personal details
+
+```java
+public class PersonalDetails {
+    public static void main(String[] args) {
+        String name = "shrdhda ";
+        String address = "dhule";
+        String phoneNumber = "9359054655";
+        String bloodGroup = "A+";
+
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Blood Group: " + bloodGroup);
+    }
+}
+```
+
+6. Code to change the value of a given variable
+
+```java
+public class ChangeVariableValue {
+    public static void main(String[] args) {
+        int a = 10;
+
+        System.out.println("Initial value of 'a': " + a);
+
+        a = 20;
+
+        System.out.println("New value of 'a': " + a);
+    }
+}
+
+
+7. Code to print the sum of three numbers
+
+```java
+public class SumOfThreeNumbers {
+    public static void main(String[] args) {
+        int num1 = 2;
+        int num2 = 4;
+        int num3 = 6;
+
+        int sum = num1 + num2 + num3;
+
+        System.out.println("Sum: " + sum);
+    }
+}
+```
+
+8. Code to print the square of a number
+
+```java
+public class SquareOfNumber {
+    public static void main(String[] args) {
+        int number = 5;
+
+        int square = number * number;
+
+        System.out.println("Square: " + square);
+    }
+}
+Certainly! Here are the Java programs for the remaining questions:
+
+9. Java program to greet with a variable name:
+
+```java
+public class Greeting {
+    public static void main(String[] args) {
+        String name = "neha";
+
+        System.out.println("Hello, " + name + "! Have a good day.");
+    }
+}
+
+
+10. Java program to understand type casting between char and int:
+
+```java
+public class TypeCasting {
+    public static void main(String[] args) {
+        char ch = 'A';
+        int asciiValue = (int) ch;
+        System.out.println("ASCII value of '" + ch + "': " + asciiValue);
+
+        int num = 65;
+        char character = (char) num;
+        System.out.println("Character corresponding to ASCII value " + num + ": " + character);
+    }
+}
+```
+
+11. Java program to print the length of the first name, last name, and the difference between their characters:
+
+```java
+public class NameLength {
+    public static void main(String[] args) {
+        String firstName = "Nilkanth";
+        String lastName = "Java";
+
+        int firstNameLength = firstName.length();
+        int lastNameLength = lastName.length();
+
+        System.out.println("Length of first name: " + firstNameLength);
+        System.out.println("Length of last name: " + lastNameLength);
+
+        int difference = firstNameLength - lastNameLength;
+        System.out.println("Difference in characters between first name and last name: " + difference);
+    }
+}
+```
+
+12. Java program to find the number of letters for a given string:
+
+```java
+public class LetterCount {
+    public static void main(String[] args) {
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        char letter = 'K';
+
+        int letterCount = alphabet.indexOf(letter) + 1;
+        System.out.println("Number of letters for '" + letter + "': " + letterCount);
+    }
+}
+```
+
+13. Java program to concatenate two strings:
+
+```java
+public class StringConcatenation {
+    public static void main(String[] args) {
+        String a = "Nilkanth";
+        String b = "Java";
+
+        String concatenatedString = a + b;
+        System.out.println("Concatenated string: " + concatenatedString);
+    }
+}
+```
+
+14. Java program to concatenate a string and integers:
+
+```java
+public class StringIntegerConcatenation {
+    public static void main(String[] args) {
+        String a = "Nilkanth";
+        int b = 6197;
+        int c = 1234;
+
+        String concatenatedString = a + b + c;
+        System.out.println("Concatenated string: " + concatenatedString);
+    }
+}
+```
+
+15. Java program to print the mathematical table for 5:
+
+```java
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        int number = 5;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
+    }
+}
+```
+
+16. Java program to find the first 10 natural numbers:
+
+```java
+public class NaturalNumbers {
+    public static void main(String[] args) {
+        int count = 1;
+
+        System.out.print("The natural numbers are: ");
+        while (count <= 10) {
+            System.out.print(count + " ");
+            count++;
+        }
+    }
+}
+```
+
+Sure! Here are the Java programs for the remaining questions:
+
+17. Java program to find the factorial value of any number entered through the keyboard using a for loop:
+
+```java
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+
+        int factorial = 1;
+
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + number + " is: " + factorial);
+    }
+}
+```
+
+18. Java program to print the first 30 even numbers and calculate their total:
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+        int count = 0;
+        int sum = 0;
+        int number = 0;
+
+        while (count < 30) {
+            if (number % 2 == 0) {
+                System.out.print(number + " ");
+                sum += number;
+                count++;
+            }
+            number++;
+        }
+
+        System.out.println("\nTotal: " + sum);
+    }
+}
